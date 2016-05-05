@@ -5,8 +5,8 @@
  * 创建时间: 16/4/29
  * 变更记录:
  */
-var React = require('react')
-var ReactDOM = require('react-dom')
+var React = require( 'react' )
+var ReactDOM = require( 'react-dom' )
 
 window.React = React
 window.ReactDOM = ReactDOM

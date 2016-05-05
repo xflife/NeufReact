@@ -14,6 +14,7 @@ class Demo extends Component {
   }
 
   render() {
+    var a= { key: 'value', };
     return (
         <div>
          hello,demo.

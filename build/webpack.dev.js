@@ -62,6 +62,11 @@ var config = {
     loaders: [
       {
         test: /[\.jsx|\.js]$/,
+        loader: "eslint-loader",
+        exclude: /node_modules/
+      },
+      {
+        test: /[\.jsx|\.js]$/,
         exclude: /node_modules/,
         loader: 'babel',
         presets: [
@@ -69,7 +74,6 @@ var config = {
           'es2015'
         ],
         plugins:[
-          "react",
           'transform-object-assign'
         ],
         query: {
