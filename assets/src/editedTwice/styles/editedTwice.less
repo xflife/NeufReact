@@ -1,0 +1,78 @@
+/* common style */
+body{
+  margin: 0 ;
+  padding: 0;
+  font-family: "Microsoft YaHei", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "SimHei", "宋体", "Emoji Symbols";
+  > * {
+    margin: 0 ;
+    padding: 0;
+  }
+}
+.clearfix:after{
+  clear: both;
+  display: table;
+  content: '';
+}
+
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right;
+}
+
+/* 底部样式 */
+.selectFooter{
+  position: fixed;
+  background: rgba(0,0,0,.6);
+  width: 100%;
+  height: 70px;
+  bottom:0;
+  z-index:2;
+  .contentBox{
+    margin: 0 auto;
+    color: #fff;
+    font-size: 14px;
+    line-height: 70px;
+    p{
+      height: 70px;
+      vertical-align: middle;
+      padding-left: 30px;
+    }
+    .reSelectBtn{
+      font-size: 16px;
+      height:70px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+    select{
+      margin-right: 30px;
+      width: 135px;
+      height: 35px;
+      font-size: 16px;
+      color: #555555;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      padding-left: 5px;
+      font-family: "Microsoft YaHei", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "SimHei", "宋体", "Emoji Symbols";
+    }
+    .makeABookBtn{
+      display: inline-block;
+      width: 120px;
+      height:45px;
+      vertical-align: middle;
+      line-height: 45px;
+      background: #11ae7a;
+      font-size: 18px;
+      text-align: center;
+      cursor: pointer;
+      margin-right: 20px;
+      &:hover{
+        background: #0F9C6D;
+      }
+    }
+  }
+}
