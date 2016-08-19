@@ -37,7 +37,9 @@ var babelrcObjectDevelopment = babelrcObject.env && babelrcObject.env.developmen
 
 // merge global and dev-only plugins
 var combinedPlugins = babelrcObject.plugins || [];
-combinedPlugins = combinedPlugins.concat(babelrcObjectDevelopment.plugins);
+if (babelrcObjectDevelopment.plugins !== undefined) {
+  combinedPlugins = combinedPlugins.concat(babelrcObjectDevelopment.plugins);
+}
 
 var babelLoaderQuery = Object.assign({}, babelrcObjectDevelopment, babelrcObject, {
   plugins: combinedPlugins
